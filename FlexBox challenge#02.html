@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        /* Define styles for the box */
+        .box-container {
+            margin: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 300px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            max-height: 75px; /* Set a max height for the content */
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        /* Checkbox styles */
+        .read-more-checkbox {
+            display: none;
+        }
+
+        .read-more-checkbox:checked + .content {
+            max-height: none;  /*Remove max-height when checkbox is checked*/ 
+        } 
+
+        .read-more-btn {
+            background-color: #464748;
+            color: #fff;
+            padding: 18px 16px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <!-- Box 1 -->
+        <div class="box">
+            <img class="image" src="flower.png" alt="not found">
+            <h2>Seamlessly visualize Quality</h2>
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-1">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores. Quia atque sit temporibus aliquam eius esse perspiciatis minima doloremque. Sint distinctio possimus non iusto Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga debitis aliquam natus nostrum distinctio aliquid animi corporis officia voluptates, quaerat esse doloremque ea fugit voluptate exercitationem eligendi, aut placeat. Nihil..</p>
+            </div>
+            <br>
+            <br>
+            <label class="read-more-btn" for="read-more-checkbox-1">Read More</label>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="box">
+            <img class="image" src="flower.png" alt="not found">
+            <h2>Seamlessly visualize Quality</h2>
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-2">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores. Quia atque sit temporibus aliquam eius esse perspiciatis minima doloremque. Sint distinctio possimus non iusto Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quae ad sunt harum et mollitia aliquam provident autem est optio, fugit quam incidunt, distinctio nisi dolorum impedit, eveniet odit iusto?.</p>
+            </div>
+            <br>
+            <br>
+            <label class="read-more-btn" for="read-more-checkbox-2">Read More</label>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="box">
+            <img class="image" src="flower.png" alt="not found">
+            <h2>Seamlessly visualize Quality</h2>
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-3">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores. Quia atque sit temporibus aliquam eius esse perspiciatis minima doloremque. Sint distinctio possimus non iusto Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed perferendis et quia consequatur autem cupiditate officia, itaque doloremque earum optio possimus asperiores illo ratione dolore molestias beatae, labore aspernatur..</p>
+            </div>
+            <br>
+            <br>
+            <label class="read-more-btn" for="read-more-checkbox-3">Read More</label>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="box">
+            <img class="image" src="flower.png" alt="not found">
+            <h2>Seamlessly visualize Quality</h2>
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-4">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores. Quia atque sit temporibus aliquam eius esse perspiciatis minima doloremque. Sint distinctio possimus non iusto Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugit fuga doloribus voluptatibus. Est ea atque commodi minus illum assumenda hic iste libero! Aliquid tenetur eligendi nostrum cumque at eum..</p>
+            </div>
+            <br>
+            <br>
+            <label class="read-more-btn" for="read-more-checkbox-4">Read More</label>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="box">
+            <img class="image" src="flower.png" alt="not found">
+            <h2>Seamlessly visualize Quality</h2>
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-5">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores. Quia atque sit temporibus aliquam eius esse perspiciatis minima doloremque. Sint distinctio possimus non iusto Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptas accusantium recusandae architecto sit placeat, iusto ducimus rem doloribus voluptate totam. Obcaecati quia labore laboriosam iure, porro et distinctio illum..</p>
+            </div>
+            <br>
+            <br>
+            <label class="read-more-btn" for="read-more-checkbox-5">Read More</label>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="box">
+            <img class="image" src="flower.png" alt="not found">
+            <h2>Seamlessly visualize Quality</h2>
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-6">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores. Quia atque sit temporibus aliquam eius esse perspiciatis minima doloremque. Sint distinctio possimus non iusto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, maiores! Non reiciendis aperiam, iste perspiciatis, omnis velit vitae laborum quam assumenda consectetur voluptatibus eius cum consequatur totam. Assumenda, quasi beatae!.</p>
+            </div>
+            <br>
+            <br>
+            <label class="read-more-btn" for="read-more-checkbox-6">Read More</label>
+        </div>
+    </div>
+</body>
+</html>
