@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading style in  CSS</title>
+    <link rel="stylesheet" href="cascading.css">
+</head>
+<style>
+    /*.fav
+    {
+        color: crimson;
+        font-weight: 700;
+    }
+    ul li{
+        color: green;
+        font-weight: normal;
+    }*/
+    /*ab agar ooper waaly ko comment men kar k .fav ko 2 baar krengy to kia hoga*/
+    .fav
+    {
+        color: crimson;
+        font-weight: 300;
+    }
+    .fav
+    {
+        color: rgb(70, 20, 220);
+        font-weight: bolder;
+    }
+    /*  same specificity men jo neechy wala hoga wo workkar ga*/
+</style>
+<link rel="stylesheet" href="cascading.css">
+<!-- ab link tag neechy kar dia to iski execution hogi -->
+<body>
+    <ul>
+        <li>item 1</li>
+        <!--       matlab sab sy ziada specificity inline styling ki hogi agar inline hui vi to baaki override ho jaengy
+        style="color: hotpink;"    -->
+        <li class="fav">item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+</body>
+</html>

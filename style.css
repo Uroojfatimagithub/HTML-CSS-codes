@@ -1,0 +1,52 @@
+/*{
+    color: blue;
+}
+li{
+   list-style-type: square;
+}
+.special
+{
+    color: crimson;
+    background-color: chartreuse;
+    font-weight: bolder;
+}
+/*yeh ol k andar ul kar background chnage kar dy ga or ul ka and li ka text colr chnage kary ga*/
+/* ol ul li
+{
+    color: darkgreen;
+    background-color: darkorchid;
+}
+/*matlab h1 k foran baad wala p us men changes agar p ki jaga koi or tag hua to changesnhi aengy*/
+/* h1+p
+{
+    color: red;
+    font-size: large;
+}
+/*ab sudo class seletor*/
+/* a:marker
+{
+    color: deeppink;
+}
+a:hover
+{
+    color: blue;
+}
+#heading
+{
+    color: rgb(128, 96, 0);
+    font-size: larger;
+    font-weight: bolder;
+    background-color: aquamarine;
+}
+li[class]
+{
+    font-size: xx-large;
+}
+li[class="a"]
+{
+  background-color: mediumturquoise;
+  color: limegreen;
+}
+*p {
+    color: coral;
+} */

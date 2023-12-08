@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Property</title>
+</head>
+<style>
+    body{
+        font-size: 20px;
+        line-height: 55px;
+        padding: 23px 44px;
+    }
+    .flex_container
+    {
+      display: flex;
+      flex-flow: row wrap;
+      /*flex-direction: column;*/
+      /*flex-direction: column-reverse;*/
+      /*flex-direction: row-reverse;*/
+      /*flex-wrap: nowrap;*/
+     /* flex-wrap: wrap;*/
+      /*flex-wrap: wrap-reverse;*/
+      /*align-content: flex-end;*/
+      /*align-content: center;*/
+      /*align-items: center;*/
+      /*align-content: flex-start;*/
+      /*align-content: stretch;     stretch tab hi hoga jab height or width ko comment men kar dengy*/
+      /*align-content: space-around;*/
+      /*align-items: space-around ;   same for stretch*/
+      /*align-content: space-between;*/
+    }
+    .flex_item
+    {
+        padding: 15px;
+       border: 5px solid rgb(5, 5, 68);
+        /*height: 175px;*/
+        width: 275px;
+     background-color: rgb(118, 118, 207);
+     color: white;
+     font-weight: bold;
+        font-size: 2em;  
+        text-align: center; 
+    }
+    #flex_item1
+    {
+        flex: 2 3 250px;
+       /* Basically hum is men maximum width dy rhy hen
+        flex-basis: 200px;
+        */
+        /*Basically hum isko 2x times ziada chota ya bra kar rhy hen*/
+        /*flex-grow: 3;*/
+        /*flex-shrink: 2;*/
+       /* align-self: center;*/
+        background-color: aquamarine;
+    }
+    #flex_item2
+    {
+       /* align-self: flex-end;*/
+       /* flex-shrink: 3;*/
+        /*flex-grow: 2;*/
+        background-color: rgb(255, 127, 138);
+    }
+    #flex_item3
+    {
+        order: 5;
+        background-color: rgb(214, 255, 127);
+    }
+    #flex_item4
+    { /*align-self: stretch;*/
+        background-color: rgb(251, 127, 255);
+    }
+    #flex_item5
+    {
+        /*samajhny wali baat yeh hy k jitna bara order hoga utna peechy aapka element ay ga*/
+        order: 6;
+        background-color: rgb(251, 127, 255);
+    }
+</style>
+<body>
+    <div class="flex_container">
+        <div class="flex_item" id="flex_item1">1</div>
+        <div class="flex_item" id="flex_item2">2</div>
+        <div class="flex_item" id="flex_item3">3</div>
+        <div class="flex_item" id="flex_item4">4</div>
+        <div class="flex_item" id="flex_item5">5</div>
+        <!--<div class="flex_item" id="flex_item6">6</div>
+        <div class="flex_item" id="flex_item7">7</div>
+        <div class="flex_item" id="flex_item8">8</div>-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/*matlab poory box ka size hmary parent element jitna ho jay ga lekin output men box size nhi dijhta remember that*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    background-color: #f0f2f5ba;
+}

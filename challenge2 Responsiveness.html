@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doing Responsiveness</title>
+</head>
+<style>
+    h2{
+        font-size: 700;
+        text-align: center;
+        color: green;
+    }
+    #no1{
+       padding: 20px 0;
+        display: inline-block;
+        line-height: 2.0;
+        background-color:rgb(191, 188, 188);
+        width:25%;
+        color:red;
+        float:left;
+    }
+    #no2{
+        
+        padding: 20px 0;
+        line-height: 2.0;
+        display: inline-block;
+        background-color: rgb(159, 144, 144);
+        width:25%;
+        color:red;
+        float:left;
+    } 
+    #no3{
+        
+        display: inline-block;
+        padding: 20px 0;
+        line-height: 2.0;
+        background-color: rgba(177, 161, 161, 0.954);
+        width:25%;
+        color:red;
+       float:left;
+    }
+    #no4{
+        
+        display: inline-block;
+        padding: 20px 0;
+        line-height: 2.0;
+        background-color: lightgray;
+        width:25%;
+        color:red;
+       float:left;
+    }
+    @media (max-width: 600px) {
+        #no1, #no2, #no3, #no4 {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        #no1, #no2, #no3, #no4 {
+            width: 100%;
+        }
+
+}
+</style>
+<body>
+    <h2>Media Query for columns increase or decrease the screen size to see the change</h2>
+    <div id="container">
+    <div id="no1"><b>Name 1</b> <br>I am Aman</div>
+    <div id="no2"><b>Name 2</b> <br>I am Ali</div>
+    <div id="no3"><b>Name 3</b> <br>I am Aqsa</div>
+    <div id="no4"><b>Name 4</b> <br>I am Amna</div>
+    </div>
+</body>
+</html>

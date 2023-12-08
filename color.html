@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors in CSS</title>
+    <style>
+        .backimage
+        {
+            background-image: url("flower.png");
+            /*height or width jab tak nhi dy rhi thi mujhy image show nhi hor hi thi kiun k h1 ka background color ziada set hua va tha height or width ziada di to sath hi image display hogae*/
+            background-repeat: no-repeat;
+            background-size: 400px;
+            height: 1000px;
+            width: 1000px;
+            /* fixed matlab background udhar hi rhy ga oopr y content hily ga background-attachment: fixed;
+            */
+            background-attachment:scroll;
+            background-position: center;
+        }
+        h1,p
+        {
+            /*agar h1 or p k peechy sy bhi background hata dun to image h1 k peechy bhi dikhny lagy gi*/
+            /*background-color: aqua;*/
+            color:  rgb(0, 0, 166);
+        }
+        p{
+
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="backimage">
+    <h1>This is heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempora facere ut qui alias praesentium possimus. Voluptas aut quos, aspernatur repellat dolores delectus est, libero maxime atque fuga provident impedit?</p>
+</div>
+</body>
+</html>

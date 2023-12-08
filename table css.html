@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,tbody,th,td
+   {
+        border: 2px solid black;
+        /*border deault separate hota agar isy collapse kar na to next step likhna hota*/
+        border-collapse: collapse;
+        padding: 10px;
+   }
+   th
+   {
+    background-color: cadetblue;
+   }
+   td
+   {
+    background-color: chocolate;
+   }
+</style>
+<body>
+    <table >
+        <br>
+        <thead>
+            <caption><b>STUDENT TABLE</b></caption>
+        </thead >
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Roll no</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Amna</td>
+                <td>51</td>
+                <td>920</td>
+            </tr>
+            <tr>
+                <td>Aqsa</td>
+                <td>150</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>andleeb</td>
+                <td>67</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <th colspan="2">Total</th>
+                <td>3750</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>

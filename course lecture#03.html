@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating form</title>
+       <!--<link rel="stylesheets" href="styleforms.css">-->
+</head>
+<style>
+     /*matlab poory box ka size hmary parent element jitna ho jay ga lekin output men box size nhi dijhta remember that*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    background-color: #f0f2f5ba;
+    padding: 15px;
+}
+.container
+{
+    background-color: whitesmoke;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],select,textarea,fieldset
+{
+    width: 1000px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px ;
+    margin: 10px;
+}
+h1
+{
+    text-align: center;
+}
+input[type="submit"]
+{
+    background-color: darkolivegreen;
+     color: aliceblue;
+     padding: 10px;
+     border: none;
+     border-radius: 4px;
+     width: 1100px;
+}
+input[type="submit"]:hover
+{
+    background-color: aqua;
+}
+</style>
+<body>
+    <div class="container">
+    <form>
+        <h1>Payment form</h1>
+        <h2>Contact information</h2>
+        <p>Name: *<input type="text" name="name"  placeholder="urooj" required></p>
+        <legend><b>Gender *</b></legend>
+        <fieldset>
+        <p>Male <input type="radio" name="gender" required> <br>  Female<input type="radio" name="gender" required>
+            <!-- the name attribute in the radio button should be same tabhi radio button work kary ga nhi to dono select ho jaengy-->
+        </p>
+    </fieldset>
+    <p>
+        Address: <textarea cols="30" rows="10" placeholder="harley street" ></textarea>
+    </p>
+    <p>
+        Email : *<input type="email" name="email" placeholder="fatima@gmail.com" value="" required>
+    </p>
+    <p>
+        Pincode :<input type="number" name="pin" placeholder="123" >
+    </p>
+    <h2>Payment information</h2>
+    <p>
+        Card type:
+        <select name="card type" id="card type">
+       <option value="">Select a card type</option>
+       <option value="visa">Visa</option>
+       <option value="dollar">Dollar</option>
+       <option value="rupees">Ruppees</option>
+    </p>
+</select>
+<p>
+    Card Number:
+    <input type="number"  placeholder="12345678" id="input" value="">
+</p>
+<p>
+    Expiration Date:
+    <input type="date" placeholder="2023" id="" value="">
+</p>
+<p>
+    CVV: *
+    <input type="password" name="cvv" id="" value="" required>
+</p>
+<input type="submit" value="Pay now">
+    </form>
+</div>
+</body>
+</html>

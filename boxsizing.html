@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div
+    {
+        height: 100px;
+        width: 150px;
+        padding: 15px;
+        margin: 20px;
+        border: 8px solid red;
+        background-color: yellow;
+    }
+    .content
+    {
+        box-sizing: content-box;
+    }
+    /*box sizing men border box use karny ki waja sy box ka size thora chota hy rather than content box*/
+    .border
+    {
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <div class="content">content box</div>
+    <div class="border">Border box</div>
+</body>
+</html>

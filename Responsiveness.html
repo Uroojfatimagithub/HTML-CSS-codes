@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--jab bhi koi website bnaaty hmen uski responsiveness ka dhiyan rakhna parta k wo har device men achy sy display ho like phone,tablet,desktop
+responsiveness ek technique hy jis k through hum alag alag screen sizes k hisaab sy apni website ko layout karengy
+media queries men hum width or height k thriough alag alag content ko change kar sakty hen
+@media screen likh rhy kiun k hamen screen k andar dikhana hy
+-->
+<style>
+    html{
+        font-size: 1em;
+    }
+    /* @media screen and (max-width:600px) {
+        body
+        {
+            color:blue;
+        }
+        
+     }*/
+    /* @media(orientation:landscape)
+     {
+        body {
+            color:rebeccapurple;
+        }
+     }*/
+     /*ab jo hy to is sab ko combine bhi kar sakty matlab ek hi men likh sakty lekin jo neechy likha uski condition yeh hy k and matlab dono true hongy to green color hoga landscape bhi hua or size 600px ya us sy less hua to hi*/
+    /* @media screen and (max-width:600px) and (orientation:landscape)
+     {
+        body {
+           color: green;
+        }
+     }*/
+     /* is men or hy matlab koi ek sy bhi chartreuse hoga display colour*/
+    /*@media screen and (max-width:600px),screen and (orientation:landscape)
+     {
+        body {
+              color: chartreuse;
+        }
+     }*/
+     /*ab next yeh hoga k not matlab jab tak landscape hy tab tak property nhi lagy gi jesy hi portrait hua property color lag jay ga*/
+     @media not all and (orientation:landscape)
+     {
+        body {
+            color:darkorange;
+        }
+     }
+</style>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corporis adipisci ullam illo hic vitae necessitatibus voluptas alias quia. Cupiditate, dicta. Saepe quidem a at quisquam. Non animi perferendis ea obcaecati. Sint eveniet sed magni laudantium porro fuga eius dignissimos fugit ipsam rerum excepturi corporis obcaecati ratione, nesciunt animi, temporibus, doloremque officiis asperiores. Facere perspiciatis aliquam excepturi accusamus, quidem, sapiente, asperiores doloribus dolore qui eum totam ipsum. Recusandae repudiandae commodi voluptates, repellat, hic est temporibus quibusdam voluptate itaque dignissimos eum mollitia eius nisi laborum ipsum ipsa ipsam quia? Perspiciatis delectus doloremque asperiores, ea incidunt in sint expedita inventore nisi earum sunt reprehenderit nulla porro qui quos possimus laboriosam mollitia explicabo quibusdam consequuntur voluptates eveniet rem. Sequi odio repellat minima, dolor ipsa ipsam alias animi doloremque officia dolores veritatis delectus vero illum. Earum voluptates corporis inventore ea aspernatur consequuntur ad, possimus quia, veniam neque natus assumenda quasi officiis eos, quod architecto.
+    </p>
+</body>
+</html>

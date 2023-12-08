@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1 forms</title>
+</head>
+<style>
+    /* Reset the box-sizing for a better layout */
+* {
+    box-sizing: border-box;
+}
+
+/* Set the body style */
+body {
+    padding: 20px 30px;
+    border: 1px solid rgb(8, 8, 8);
+    background-color: rgb(244, 241, 241);
+    margin: 30px 50px;
+}
+
+/* Style the contact form title */
+.font {
+    background-color: lightgreen;
+    font-size: 16px; /* Use a more appropriate font size */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the contact form inputs and textarea */
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+    background-color: rgb(244, 241, 241);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(8, 8, 8);
+    width: 100%;
+}
+
+/* Style the contact form submit button */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: lightgreen;
+    border: lightgreen;
+    border-radius: 5px;
+    cursor: pointer; /* Make the button clickable */
+}
+
+/* Style the contact form container */
+forms {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <forms>
+        <p class="font">Contact Form<br>Please fill all the text in the fields</p>
+        <hr>
+        <p>Your Name:</p><br>
+        <input type="text" placeholder="Your Full Name" name="name">
+        <p>Your Email:</p><br>
+        <input type="email" name="mail" placeholder="Valid Email Adress">
+        <p>Message:</p><br>
+        <textarea cols="30" rows="10" placeholder="Your Message To Us" ></textarea>
+        <p>Subject:</p>
+        <input type="text" name="sub" placeholder="Job Inquiry">
+        <br>
+        <input type="submit" name="send" value="Send">
+    </forms>
+</body>
+</html>
