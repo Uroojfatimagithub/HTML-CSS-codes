@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container
+    {
+        display: grid;
+        /*grid-template-columns: 100px 200px 200px;*/
+       /* grid-template-rows: 200px 200px 200px 200px 200px;*/
+       /*grid-template-columns: 1fr 1fr 1fr;
+       poory page k equal fraction men dabby divide ho gay hen 
+       ab 3 dfa likhny sy acha repeat ka function use karlo*/
+       /*grid-template-columns: repeat(4,2fr);*/
+       /*media queries ki jaga yeh bhi use kar sakty is sy hmaari responsiveness achi hogi o bhi ek hi code men*/
+       grid-template-columns: repeat(auto-fill,minmax(200px , 1fr));
+       grid-gap: 20px;
+       grid-auto-rows: minmax(100px , auto);
+       grid-auto-columns: minmax(50px , auto);
+       column-gap: 120px;
+       row-gap: 120px;
+    }
+    .items
+    {
+        background-color: lightcoral;
+        border: 2px solid green;
+        border-radius: 3px;
+    }
+    #item-3
+    {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #item-1
+    {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+   .item1-container
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        /*display grid ka matlab row or columns men cheex store ho  rhi inspect kar k dekh sakti*/
+    }
+    .nested-items
+    {
+        border: 2px solid yellow;
+        border-radius: 3px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="items items1-container" id="item-1">
+            <!--Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi corrupti maiores laborum veniam quia, omnis unde neque distinctio saepe? Quidem numquam odio consequuntur dolorum corporis ad, molestiae voluptatum minima saepe illum non porro cupiditate ex sed nam enim laboriosam impedit facere! Necessitatibus eveniet rem dolore veritatis dolores consequuntur laborum totam cum. Commodi obcaecati nihil molestiae totam? Fugit, odio. Repellat dignissimos esse veritatis ullam sunt est? Hic, veniam corporis! Ipsum nulla reprehenderit voluptas sint? Cupiditate architecto doloribus id fugiat, quas dicta autem! Quia quod harum veniam blanditiis assumenda ut deserunt atque libero consectetur vitae asperiores dolorum eum, hic tempore ipsa perspiciatis quisquam autem et omnis, id perferendis pariatur? Mollitia esse non nesciunt ex, a exercitationem cumque. Alias ducimus eos nihil sed?-->
+            <div class="nested-items">Dabbay men dabba 1</div>
+            <div class="nested-items">Dabbay men dabba 2</div>
+            <div class="nested-items">Dabbay men dabba 3</div>
+        </div>
+        <div class="items">Dabba 2</div>
+        <div class="items" id="item-3">Dabba 3</div>
+        <div class="items">Dabba 4</div>
+        <div class="items">Dabba 5</div>
+    </div>
+</body>
+</html>
